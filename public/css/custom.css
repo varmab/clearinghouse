@@ -1,0 +1,113 @@
+.headerSection {
+  background-color: #005b9a;
+  color: white;
+  height: 47px;
+}
+
+.headerContent {
+  margin-top: 14px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.activeHeader {
+  font-weight: bold;
+}
+
+.subHeaderSection {
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+.subHeaderContent {
+  margin-top: 17px;
+  padding-left: 0px;
+}
+
+.subHeaderSteps {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subHeaderTitle {
+  font-size: 14px;
+}
+
+.activeSubHeaderStep {
+  margin-top: 5px;
+  font-size: 32px;
+  display: block;
+}
+
+.inactiveSubHeaderStep {
+  display: none;
+}
+
+.leftAlign {
+  text-align: right;
+}
+
+.homeSection {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.homeDiv {
+  border: 1px solid black;
+}
+
+.homeTitle {
+  margin-top: 50px;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.homeSubContent {
+  margin-top: 100px;
+}
+
+.homeCheckDiv {
+  background-color: white;
+  cursor: pointer;
+}
+
+.homeCheck {
+  font-size: 22px;
+  color: lightgray;
+}
+
+.homeCheckText {
+  height: 40px;
+}
+
+.nextButton {
+  border: 1px solid black;
+}
+
+.homeDivChecked {
+  color: black;
+}
+
+.menuButton {
+  cursor: pointer;
+}
+
+.samplePage {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.siteIcon {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.homeCheckInnerText {
+  margin-top: 4px;
+}
