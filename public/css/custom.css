@@ -111,3 +111,12 @@
 .homeCheckInnerText {
   margin-top: 4px;
 }
+
+.requestDropdown li {
+     padding: 7px 10px;
+     cursor:pointer
+}
+
+button {
+    outline: 0
+}

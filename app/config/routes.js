@@ -8,6 +8,9 @@ import Directory from '../components/Directory';
 import Request from '../components/Request';
 import SignIn from '../components/SignIn';
 import Register from '../components/Register';
+import Details from '../components/Details';
+
+
 
 export default (
 
@@ -18,5 +21,8 @@ export default (
 		<Route path="/request" component={Request} />
 		<Route path="/signin" component={SignIn} />
 		<Route path="/register" component={Register} />
+		<Route path="/details" component={Details} />
+
+
 	</Route>
 );
