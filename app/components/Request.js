@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link,PropTypes} from 'react-router';
+import Header from './Header';
 import SubHeader from './SubHeader';
 
 class Request extends React.Component {
@@ -34,6 +35,7 @@ class Request extends React.Component {
   render() {
     return (
       <div className="row" style={{letterSpacing: '1px'}}>
+			<Header />
            <SubHeader/>
 				      <div className="row text-center" style={{padding: '20px 0px 5px 0px'}}>
                    <h2>I'm Requesting:</h2>

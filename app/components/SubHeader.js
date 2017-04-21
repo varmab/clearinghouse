@@ -28,7 +28,7 @@ class SubHeader extends React.Component {
                 </div>
                 <div className="subHeaderContent col-md-8">
                   <div className="subHeaderSteps">Step 01</div>
-                  <div className="subHeaderTitle">Search</div>
+                  <div className="subHeaderTitle">Training</div>
                 </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@ class SubHeader extends React.Component {
                 </div>
                 <div className="subHeaderContent col-md-8">
                   <div className="subHeaderSteps">Step 02</div>
-                  <div className="subHeaderTitle">Request Details</div>
+                  <div className="subHeaderTitle">Search</div>
                 </div>
               </div>
               <div className="col-md-3">
@@ -47,7 +47,7 @@ class SubHeader extends React.Component {
                 </div>
                 <div className="subHeaderContent col-md-8">
                   <div className="subHeaderSteps">Step 03</div>
-                  <div className="subHeaderTitle">Review</div>
+                  <div className="subHeaderTitle">Request</div>
                 </div>
               </div>
               <div className="col-md-3">

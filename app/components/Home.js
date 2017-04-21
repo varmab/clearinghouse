@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link,PropTypes} from 'react-router';
+import Header from './Header';
 
 
 class Home extends React.Component {
@@ -30,6 +31,8 @@ class Home extends React.Component {
 
   render() {
     return (
+			<div>
+			<Header />
       <div className="homeSection row">
 				<div className="col-md-2"></div>
 				<div className="col-md-8 homeDiv">
@@ -107,6 +110,7 @@ class Home extends React.Component {
 				<div className="col-md-2"></div>
 
       </div>
+			</div>
     );
   }
 }
