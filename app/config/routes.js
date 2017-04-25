@@ -9,6 +9,7 @@ import Request from '../components/Request';
 import SignIn from '../components/SignIn';
 import Register from '../components/Register';
 import Home1 from '../components/Home1';
+import Admin2 from '../components/Admin2';
 
 export default (
 
@@ -20,5 +21,6 @@ export default (
 		<Route path="/signin" component={SignIn} />
 		<Route path="/register" component={Register} />
 		<Route path="/home1" component={Home1} />
+		<Route path="/admin" component={Admin2} />
 	</Route>
 );

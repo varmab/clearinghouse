@@ -2,7 +2,7 @@ import React from 'react';
 import { Link,PropTypes} from 'react-router';
 import HeaderNew from '../components/HeaderNew';
 
-class Home1 extends React.Component {
+class Admin2 extends React.Component {
 
 
 	constructor(props) {
@@ -34,9 +34,9 @@ class Home1 extends React.Component {
 
 		    <div id="main" className="page-content">
 
-		      <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
+		      <div className="mypage-header"  style={{backgroundColor: "#D4AF37", height: "268px"}}>
 
-					<HeaderNew />
+						<HeaderNew />
 
             <div className="container mypage-content">
               <div className="row">
@@ -47,9 +47,37 @@ class Home1 extends React.Component {
                 </div>
                 <div className="col-xs-8 col-md-9">
                   <div className="text-field">
-                    <span>Good Afternoon</span><br />
-                    <span><span>Wes Warren</span><span>CMO,Corporate Communication</span></span><br />
-                    <span>You have 3 new messages</span>
+                    <div className="headerGreetings">Good Afternoon</div>
+										<span className="adminSpan">ADMINISTRATOR</span><br/>
+                    <div>Wes WarrenCMO,Corporate Communication</div>
+										<div className="row adminHeaderDetailsRow">
+											<div className="col-md-4 adminHeaderDetails">
+												<div className="row">
+													<div className="col-md-9">
+														<div className="adminHeaderDetailsContent">
+															<div># OF ACTIVE</div>
+															<div>REQUESTES</div>
+														</div>
+														<div style={{width: "100%", backgroundColor: "black", height: "5px", marginBottom: "10px"}}>
+															<div style={{width:"70%", height: "100%", backgroundColor: "white"}}></div>
+														</div>
+														<div className="adminHeaderDetailsTime">
+															<div>Last Updated</div>
+															<div>3rd April, 2017</div>
+														</div>
+													</div>
+													<div className="col-md-3 adminHeaderDetailsCountParent">
+														<div className="adminHeaderDetailsCountChild">7</div>
+													</div>
+												</div>
+											</div>
+											<div className="col-md-4 adminHeaderDetails">
+												Hii
+											</div>
+											<div className="col-md-4 adminHeaderDetails">
+												Hii
+											</div>
+										</div>
                   </div>
                 </div>
                 <div className="col-xs-2 col-md-2">
@@ -58,16 +86,24 @@ class Home1 extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="well">
-                <div className="row">
-                  <div className="col-xs-6">
-                    <div className="pull-left"><span>MY REQUEST : </span><span>(10) </span></div>
-                  </div>
-                  <div className="col-xs-6">
-                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "training")} className="btn btn-info"><i className="fa fa-plus" /> Start New Reauest</button></div>
-                  </div>
+
+              <center className="row">
+								<div className="col-md-1"></div>
+                <div className="col-md-1 headerTabs headerTabActive">
+                  <div className="headerTabContent">Name</div>
                 </div>
-              </div>
+								<div className="col-md-1 headerTabs">
+                  <div className="headerTabContent">URLs</div>
+                </div>
+								<div className="col-md-1 headerTabs">
+                  <div className="headerTabContent">3rd Party</div>
+                </div>
+								<div className="col-md-1 headerTabs">
+                  <div className="headerTabContent">All</div>
+                </div>
+
+              </center>
+
             </div>
           </div>
           <div className="container" style={{marginTop: 60}}>
@@ -484,6 +520,6 @@ class Home1 extends React.Component {
     );
   }
 }
-Home1.contextTypes = { history: PropTypes.history }
+Admin2.contextTypes = { history: PropTypes.history }
 
-export default Home1;
+export default Admin2;

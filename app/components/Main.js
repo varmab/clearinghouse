@@ -1,6 +1,6 @@
 import React from 'react';
+import HeaderNew from '../components/HeaderNew';
 
-import SubHeader from './SubHeader';
 
 import { PropTypes } from 'react-router';
 
@@ -25,6 +25,7 @@ class Main extends React.Component {
       return (
 				<div>
 
+					
 
 					<div className="container-fluid" style={{padding:"0px"}}>
 						{this.props.children}

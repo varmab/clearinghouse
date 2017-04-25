@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link,PropTypes} from 'react-router';
-import Header from './Header';
 
 
 class Home extends React.Component {

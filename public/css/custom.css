@@ -146,3 +146,72 @@ button {
 .collapseButton {
   margin-top: 8px;
 }
+
+.page-content {
+  /*margin-top: -65px;*/
+  /*background-color: #D4AF37;*/
+}
+
+.mypage-content {
+
+  padding-top: 10px;
+}
+
+.adminSpan {
+  font-size: 8px;
+  background-color: #092f5c;
+  padding: 4px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.adminHeaderDetailsRow {
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.adminHeaderDetails {
+  background-color: rgba(0,0,0,0.5) !important;
+  margin: 2px;
+  width: 30%;
+}
+
+.adminHeaderDetailsContent{
+  margin-top: 5px;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.adminHeaderDetailsCountParent {
+  margin-top: 18px;
+  font-size: xx-large;
+}
+
+.adminHeaderDetailsTime {
+  font-size: 8px;
+  margin-bottom: 5px;
+}
+
+.headerGreetings {
+  font-size: 10px;
+}
+
+.headerContentPadding{
+  padding-top: 10px !important;
+}
+
+.headerTabs {
+  height: 30px;
+  color: white;
+}
+
+.headerTabActive {
+  background-color: white;
+  color: black !important;
+}
+
+.headerTabContent {
+  margin-top: 5px;
+}
