@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link,PropTypes} from 'react-router';
-import HeaderNew from '../components/HeaderNew';
+import Header from './Header';
 
 class Home1 extends React.Component {
-
 
 	constructor(props) {
         super(props)
@@ -30,13 +29,13 @@ class Home1 extends React.Component {
 
   render() {
     return (
-			<div>
+      <div>
 
-		    <div id="main" className="page-content">
+        <div id="main" className="page-content">
 
-		      <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
+          <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
 
-					<HeaderNew />
+          <Header />
 
             <div className="container mypage-content">
               <div className="row">
@@ -64,7 +63,7 @@ class Home1 extends React.Component {
                     <div className="pull-left"><span>MY REQUEST : </span><span>(10) </span></div>
                   </div>
                   <div className="col-xs-6">
-                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "training")} className="btn btn-info"><i className="fa fa-plus" /> Start New Reauest</button></div>
+                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "request")} className="btn btn-info"><i className="fa fa-plus" /> Start New Reauest</button></div>
                   </div>
                 </div>
               </div>
@@ -190,8 +189,6 @@ class Home1 extends React.Component {
                                                     </div>
                                                 </div>
                                             </li>
-
-
                                         </ul>
                                     </div>*/}
                         <div className="container-fluid">

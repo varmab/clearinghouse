@@ -1,42 +1,42 @@
 import React from 'react';
 import { Link,PropTypes} from 'react-router';
-import HeaderNew from '../components/HeaderNew';
+import Header from '../components/Header';
 
 class Admin2 extends React.Component {
 
 
-	constructor(props) {
+  constructor(props) {
         super(props)
         this.state = {
 
         };
     }
 
-	componentWillMount() {
+  componentWillMount() {
 
-	}
+  }
 
 
   componentDidMount() {
-		$(".homeCheckDiv").click(function() {
-		  $(this).find(".homeCheck").toggleClass("homeDivChecked")
-		});
+    $(".homeCheckDiv").click(function() {
+      $(this).find(".homeCheck").toggleClass("homeDivChecked")
+    });
   }
 
-	redirectTo(path) {
-		this.context.history.pushState(null, '/'+path);
-	}
+  redirectTo(path) {
+    this.context.history.pushState(null, '/'+path);
+  }
 
 
   render() {
     return (
-			<div>
+      <div>
 
-		    <div id="main" className="page-content">
+        <div id="main" className="page-content">
 
-		      <div className="mypage-header"  style={{backgroundColor: "#D4AF37", height: "268px"}}>
+          <div className="mypage-header"  style={{backgroundColor: "#D4AF37", height: "268px"}}>
 
-						<HeaderNew />
+            <Header />
 
             <div className="container mypage-content">
               <div className="row">
@@ -48,36 +48,69 @@ class Admin2 extends React.Component {
                 <div className="col-xs-8 col-md-9">
                   <div className="text-field">
                     <div className="headerGreetings">Good Afternoon</div>
-										<span className="adminSpan">ADMINISTRATOR</span><br/>
+                    <span className="adminSpan">ADMINISTRATOR</span><br/>
                     <div>Wes WarrenCMO,Corporate Communication</div>
-										<div className="row adminHeaderDetailsRow">
-											<div className="col-md-4 adminHeaderDetails">
-												<div className="row">
-													<div className="col-md-9">
-														<div className="adminHeaderDetailsContent">
-															<div># OF ACTIVE</div>
-															<div>REQUESTES</div>
-														</div>
-														<div style={{width: "100%", backgroundColor: "black", height: "5px", marginBottom: "10px"}}>
-															<div style={{width:"70%", height: "100%", backgroundColor: "white"}}></div>
-														</div>
-														<div className="adminHeaderDetailsTime">
-															<div>Last Updated</div>
-															<div>3rd April, 2017</div>
-														</div>
-													</div>
-													<div className="col-md-3 adminHeaderDetailsCountParent">
-														<div className="adminHeaderDetailsCountChild">7</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-md-4 adminHeaderDetails">
-												Hii
-											</div>
-											<div className="col-md-4 adminHeaderDetails">
-												Hii
-											</div>
-										</div>
+                    <div className="row adminHeaderDetailsRow">
+                      <div className="col-md-4 adminHeaderDetails">
+                        <div className="row">
+                          <div className="col-md-8">
+                            <div className="adminHeaderDetailsContent">
+                              <div># OF ACTIVE</div>
+                              <div>REQUESTES</div>
+                            </div>
+                            <div style={{width: "100%", backgroundColor: "black", height: "5px", marginBottom: "10px"}}>
+                              <div style={{width:"70%", height: "100%", backgroundColor: "white"}}></div>
+                            </div>
+                            <div className="adminHeaderDetailsTime">
+                              <div>Last Updated</div>
+                              <div>3rd April, 2017</div>
+                            </div>
+                          </div>
+                          <div className="col-md-4 adminHeaderDetailsCountParent">
+                            <div className="adminHeaderDetailsCountChild">7</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 adminHeaderDetails">
+                        <div className="row">
+                          <div className="col-md-8">
+                            <div className="adminHeaderDetailsContent">
+                              <div>OLDEST</div>
+                              <div>REQUEST</div>
+                            </div>
+                            <div style={{color: "black", height: "15px"}}>
+                            NAMING
+                            </div>
+                            <div className="adminHeaderDetailsTime">
+                              <div>My guardian Dental</div>
+                              <div>Personalized Dental Insurance</div>
+                            </div>
+                          </div>
+                          <div className="col-md-4 adminHeaderDetailsCountParent">
+                            <div className="adminHeaderDetailsCountChild">#97</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 adminHeaderDetails">
+                        <div className="row">
+                          <div className="col-md-8">
+                            <div className="adminHeaderDetailsContent">
+                              <div>NEWEST</div>
+                              <div>REQUEST</div>
+                            </div>
+                            <div style={{color: "black", height: "13px"}}>
+                              URL
+                            </div>
+                            <div className="adminHeaderDetailsTime">
+                              <div>www.guardianexample.com</div>
+                            </div>
+                          </div>
+                          <div className="col-md-4 adminHeaderDetailsCountParent">
+                            <div className="adminHeaderDetailsCountChild">#110</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="col-xs-2 col-md-2">
@@ -88,17 +121,17 @@ class Admin2 extends React.Component {
               </div>
 
               <center className="row">
-								<div className="col-md-1"></div>
-                <div className="col-md-1 headerTabs headerTabActive">
+                <div className="col-md-1"></div>
+                <div className="col-md-1 headerTabs">
                   <div className="headerTabContent">Name</div>
                 </div>
-								<div className="col-md-1 headerTabs">
+                <div className="col-md-1 headerTabs headerTabActive">
                   <div className="headerTabContent">URLs</div>
                 </div>
-								<div className="col-md-1 headerTabs">
+                <div className="col-md-1 headerTabs">
                   <div className="headerTabContent">3rd Party</div>
                 </div>
-								<div className="col-md-1 headerTabs">
+                <div className="col-md-1 headerTabs">
                   <div className="headerTabContent">All</div>
                 </div>
 
@@ -226,8 +259,6 @@ class Admin2 extends React.Component {
                                                     </div>
                                                 </div>
                                             </li>
-
-
                                         </ul>
                                     </div>*/}
                         <div className="container-fluid">

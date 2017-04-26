@@ -17,6 +17,7 @@
 }
 
 .subHeaderSection {
+  color: rgb(48, 139, 192);
   height: 80px;
   border-bottom: 1px solid black;
 }
@@ -214,4 +215,21 @@ button {
 
 .headerTabContent {
   margin-top: 5px;
+}
+
+.nullShadow {
+  background-color: white;
+  box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+  border: 1px solid white;
+  border-bottom: 0.5px solid #ccc;
+  height: 43px;
+}
+
+.nullShadow:focus{
+    border-color: white;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 0 0px rgba(102,175,233,.6);
+    border-bottom: 0.5px solid #ccc;
 }
