@@ -35,7 +35,6 @@ class Request extends React.Component {
   render() {
     return (
       <div>
-
         <div id="main" className="page-content">
 
           <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
