@@ -98,11 +98,12 @@ class Admin2 extends React.Component {
                               <div>NEWEST</div>
                               <div>REQUEST</div>
                             </div>
-                            <div style={{color: "black", height: "13px"}}>
+                            <div style={{color: "black", height: "15px"}}>
                               URL
                             </div>
-                            <div className="adminHeaderDetailsTime">
+                            <div className="adminHeaderDetailsTime" >
                               <div>www.guardianexample.com</div>
+                              <div> &nbsp;</div>
                             </div>
                           </div>
                           <div className="col-md-4 adminHeaderDetailsCountParent">
@@ -144,18 +145,14 @@ class Admin2 extends React.Component {
               <div className="panel panel-default">
                 <div className="panel-heading" role="tab" id="headingOne">
                   <div className="row">
-                    <div className="col-xs-1 panel-title">
-                      <a className="collapseButton" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <i className="more-less glyphicon glyphicon-plus" />
-                      </a>
-                    </div>
                     <div className="col-xs-1 panel-title" style={{padding: 0, textAlign: 'right'}}>
                       <a style={{padding: '15px 0px'}}><span className="count toggleHash"># 110</span></a>
                     </div>
                     <div className="col-xs-5 panel-title">
                       <a style={{padding: "10px 0px 0px 15px"}}><span className="heading">
                         <a style={{fontSize: "20px"}} href="http://www.guardianexample.com" target="_blank">www.guardianexample.com</a></span></a>
-                      <div style={{paddingLeft: "15px"}}>BUSINESS UNIT: Dental</div>
+                      <div style={{paddingLeft: "15px", fontSize: 'smaller'}}>BUSINESS UNIT: Dental</div>
+                      <div style={{paddingLeft: "15px", fontSize: 'smaller'}}>REQUESTED BY: Wes Warren</div>
                     </div>
                     <div className="col-xs-3 panel-title">
                       <a>
@@ -174,6 +171,11 @@ class Admin2 extends React.Component {
                     <div className="col-xs-2 panel-title">
                       <a  style={{marginTop: "8px"}}>
                         04/21/17
+                      </a>
+                    </div>
+                    <div className="col-xs-1 panel-title">
+                      <a className="collapseButton" role="button" onClick={this.redirectTo.bind(this, "adminapproval")}>
+                        <i className="more-less glyphicon glyphicon-chevron-right" />
                       </a>
                     </div>
                   </div>
@@ -313,18 +315,14 @@ class Admin2 extends React.Component {
               <div className="panel panel-default">
                 <div className="panel-heading" role="tab" id="headingTwo">
                   <div className="row">
-                    <div className="col-xs-1 panel-title">
-                      <a className="collapseButton" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <i className="more-less glyphicon glyphicon-plus" />
-                      </a>
-                    </div>
                     <div className="col-xs-1 panel-title" style={{padding: 0, textAlign: 'right'}}>
                       <a style={{padding: '15px 0px'}}><span className="count toggleHash"># 112</span></a>
                     </div>
                     <div className="col-xs-5 panel-title">
                       <a style={{padding: "10px 0px 0px 15px"}}><span className="heading">
                         <a style={{fontSize: "20px"}} href="http://www.guardianexample.com" target="_blank">www.guardianexample.com</a></span></a>
-                      <div style={{paddingLeft: "15px"}}>BUSINESS UNIT: Dental</div>
+                      <div style={{paddingLeft: "15px", fontSize: 'smaller'}}>BUSINESS UNIT: Dental</div>
+                      <div style={{paddingLeft: "15px", fontSize: 'smaller'}}>REQUESTED BY: Wes Warren</div>
                     </div>
                     <div className="col-xs-3 panel-title">
                       <a>
@@ -343,6 +341,11 @@ class Admin2 extends React.Component {
                     <div className="col-xs-2 panel-title">
                       <a style={{marginTop: "8px"}}>
                         04/21/17
+                      </a>
+                    </div>
+                    <div className="col-xs-1 panel-title">
+                      <a className="collapseButton" role="button" onClick={this.redirectTo.bind(this, "adminapproval")}>
+                        <i className="more-less glyphicon glyphicon-chevron-right" />
                       </a>
                     </div>
                   </div>
@@ -430,18 +433,14 @@ class Admin2 extends React.Component {
               <div className="panel panel-default">
                 <div className="panel-heading" role="tab" id="headingThree">
                   <div className="row">
-                    <div className="col-xs-1 panel-title">
-                      <a className="collapseButton" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <i className="more-less glyphicon glyphicon-plus" />
-                      </a>
-                    </div>
                     <div className="col-xs-1 panel-title" style={{padding: 0, textAlign: 'right'}}>
                       <a style={{padding: '15px 0px'}}><span className="count toggleHash"># 105</span></a>
                     </div>
                     <div className="col-xs-5 panel-title">
                       <a style={{padding: "10px 0px 0px 15px"}}><span className="heading">
                         <a style={{fontSize: "20px"}} href="http://www.guardianexample.com" target="_blank">www.guardianexample.com</a></span></a>
-                      <div style={{paddingLeft: "15px"}}>BUSINESS UNIT: Dental</div>
+                      <div style={{paddingLeft: "15px", fontSize: 'smaller'}}>BUSINESS UNIT: Dental</div>
+                      <div style={{paddingLeft: "15px", fontSize: 'smaller'}}>REQUESTED BY: John Deer</div>
                     </div>
                     <div className="col-xs-3 panel-title">
                       <a>
@@ -460,6 +459,11 @@ class Admin2 extends React.Component {
                     <div className="col-xs-2 panel-title">
                       <a style={{marginTop: "8px"}}>
                         04/21/17
+                      </a>
+                    </div>
+                    <div className="col-xs-1 panel-title">
+                      <a className="collapseButton" role="button" onClick={this.redirectTo.bind(this, "adminapproval")}>
+                        <i className="more-less glyphicon glyphicon-chevron-right" />
                       </a>
                     </div>
                   </div>

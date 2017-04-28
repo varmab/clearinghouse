@@ -15,6 +15,7 @@ import Review from '../components/Review';
 import LoginPage from '../components/LoginPage';
 import Submit from '../components/Submit';
 import Admin2 from '../components/Admin2';
+import AdminApproval from '../components/AdminApproval';
 
 export default (
 
@@ -32,5 +33,6 @@ export default (
 		<Route path="/home1" component={Home1} />
 		<Route path="/submit" component={Submit} />
 		<Route path="/admin2" component={Admin2} />
+		<Route path="/adminapproval" component={AdminApproval} />
 	</Route>
 );

@@ -63,7 +63,7 @@ class Home1 extends React.Component {
                     <div className="pull-left"><span>MY REQUEST : </span><span>(10) </span></div>
                   </div>
                   <div className="col-xs-6">
-                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "request")} className="btn btn-info"><i className="fa fa-plus" /> Start New Reauest</button></div>
+                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "request")} className="btn btn-info"><i className="fa fa-plus" /> Start New Request</button></div>
                   </div>
                 </div>
               </div>
@@ -195,7 +195,7 @@ class Home1 extends React.Component {
                           <ul className="htimeline">
                             <li className="step col-xs-3 green">
                               <div className="timeicon textgreen">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText greenElement">1</div>
                               </div>
                               <div className="textcgreen">
                                 <span>CORP COMMS</span>
@@ -205,7 +205,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="step col-xs-3 green">
                               <div className="timeicon textgreen">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText greenElement">2</div>
                               </div>
                               <div className="textcgreen">
                                 <span>LEGAL</span>
@@ -215,7 +215,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="step col-xs-3 cyan">
                               <div className="timeicon">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText blackElement">3</div>
                               </div>
                               <div className="textcblack">
                                 <span>IT</span>
@@ -225,7 +225,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="steplast col-xs-3 cyan">
                               <div className="timeicon textcyan">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText">4</div>
                               </div>
                               <div className="textccyan">
                                 <span>COMPLIANCE</span>
@@ -312,7 +312,7 @@ class Home1 extends React.Component {
                           <ul className="htimeline">
                             <li className="step col-xs-3 green">
                               <div className="timeicon textgreen">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText greenElement">1</div>
                               </div>
                               <div className="textcgreen">
                                 <span>CORP COMMS</span>
@@ -322,7 +322,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="step col-xs-3 green">
                               <div className="timeicon textgreen">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText greenElement">2</div>
                               </div>
                               <div className="textcgreen">
                                 <span>LEGAL</span>
@@ -332,7 +332,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="step col-xs-3 cyan">
                               <div className="timeicon">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText blackElement">3</div>
                               </div>
                               <div className="textcblack">
                                 <span>IT</span>
@@ -342,7 +342,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="steplast col-xs-3 cyan">
                               <div className="timeicon textcyan">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText">4</div>
                               </div>
                               <div className="textccyan">
                                 <span>COMPLIANCE</span>
@@ -429,7 +429,7 @@ class Home1 extends React.Component {
                           <ul className="htimeline">
                             <li className="step col-xs-3 cyan">
                               <div className="timeicon textblack">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText blackElement">1</div>
                               </div>
                               <div className="textcblack">
                                 <span>CORP COMMS</span>
@@ -439,7 +439,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="step col-xs-3 cyan">
                               <div className="timeicon textcyan">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText">2</div>
                               </div>
                               <div className="textccyan">
                                 <span>LEGAL</span>
@@ -449,7 +449,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="step col-xs-3 cyan">
                               <div className="timeicon textcyan">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText">3</div>
                               </div>
                               <div className="textccyan">
                                 <span>IT</span>
@@ -459,7 +459,7 @@ class Home1 extends React.Component {
                             </li>
                             <li className="steplast col-xs-3 cyan">
                               <div className="timeicon textcyan">
-                                <i className="fa fa-2x fa-cab" />
+                                <div className="timeText">4</div>
                               </div>
                               <div className="textccyan">
                                 <span>COMPLIANCE</span>

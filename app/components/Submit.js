@@ -76,8 +76,9 @@ class Submit extends React.Component {
                       <div className="col-md-8" style={{border: '1px solid #cccccc',borderRadius: '5px'}}>
                       <center>
                       <div>
-                        <p> Request Submitted</p>
-                        <p> Your Request is #36543</p>
+                      <img src="./images/success.png" style={{verticalAlign: 'middle', opacity: 1}}/>
+                        <p style={{fontSize: 'x-large', color: 'blue'}}> Request Submitted</p>
+                        <b> Your Request is #36543</b>
                       </div>
                   <div className="row text-center" style={{marginTop: '40px',marginBottom: '40px'}}>
                       <input type="button" onClick={this.redirectTo.bind(this, "home1")} className="btn nextButton btn-info"  style={{height: '45px', width:'50%'}} value="Go To Dashboard" />

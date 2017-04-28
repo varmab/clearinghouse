@@ -354,6 +354,7 @@
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
+    padding-left: 40px;
 }
 
     .htimeline .step {
@@ -389,7 +390,7 @@
 
 
         .htimeline .step .textcgreen, .htimeline .steplast .textcgreen {
-            margin: 5px 0px 0px -74px;
+            margin: 5px 0px 0px -100px;
             font-size: 14px;
             vertical-align: top;
             padding: 0;
@@ -398,7 +399,7 @@
         }
 
         .htimeline .step .textcblack, .htimeline .steplast .textcblack {
-            margin: 5px 0px 0px -74px;
+            margin: 5px 0px 0px -100px;
             font-size: 14px;
             vertical-align: top;
             padding: 0;
@@ -407,7 +408,7 @@
         }
 
 .htimeline .step .textccyan, .htimeline .steplast .textccyan {
-    margin: 5px 0px 0px -74px;
+    margin: 5px 0px 0px -100px;
     font-size: 14px;
     vertical-align: top;
     padding: 0;
