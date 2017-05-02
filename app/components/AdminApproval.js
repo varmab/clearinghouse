@@ -37,7 +37,7 @@ class AdminApproval extends React.Component {
 
         <div id="main" className="page-content">
 
-          <div className="mypage-header" style={{backgroundColor: "#D4AF37", height: "215px"}}>
+          <div className="mypage-header" style={{backgroundColor: "#C1A236", height: "215px"}}>
           <Header />
             <div className="container mypage-content">
               <div className="row">
@@ -82,7 +82,7 @@ class AdminApproval extends React.Component {
                     <div>
                       <div style={{marginTop: "10px", fontSize: "17px", fontWeight: "bold"}}>Activity
                       </div>
-                      <div>Last update on 10/04/2017</div>
+                      <i>Last update on 10/04/2017</i>
                     </div>
                   </div>
                 </div>
@@ -132,9 +132,9 @@ class AdminApproval extends React.Component {
                                 <div className="col-md-9">
                                   <div className="textCircle col-md-2">JD</div>
                                   <div className="col-md-10">
-                                    <span style={{fontSize: "10px", marginRight: "2px"}}>Approved by</span>
+                                    <span style={{fontSize: "12px", marginRight: "2px"}}>Approved by</span>
                                     <span>Jane Doe</span><br/>
-                                    <span style={{fontSize: "10px"}}>No Comments</span>
+                                    <span style={{fontSize: "12px"}}>No Comments</span>
                                   </div>
                                 </div>
                                 <div className="col-md-3">
@@ -156,11 +156,11 @@ class AdminApproval extends React.Component {
                               </div>
                               <div className="row" style={{marginTop: "20px"}}>
                                 <div className="col-md-9">
-                                  <div className="textCircle col-md-2">LG</div>
+                                  <div className="textCircle col-md-2" style={{backgroundColor: 'lightblue'}}>LG</div>
                                   <div className="col-md-10">
-                                    <span style={{fontSize: "10px", marginRight: "2px"}}>Approved by</span>
+                                    <span style={{fontSize: "12px", marginRight: "2px"}}>Approved by</span>
                                     <span>Logan G</span><br/>
-                                    <span style={{fontSize: "10px"}}>No Comments</span>
+                                    <span style={{fontSize: "12px"}}>No Comments</span>
                                   </div>
                                 </div>
                                 <div className="col-md-3">
@@ -182,15 +182,15 @@ class AdminApproval extends React.Component {
                               </div>
                               <div className="row" style={{marginTop: "20px"}}>
                                 <div className="col-md-9">
-                                  <div className="textCircle col-md-2">JD</div>
+                                  <div className="textCircle col-md-2" style={{backgroundColor: 'lightsteelblue'}}>JD</div>
                                   <div className="col-md-10">
-                                    <span style={{fontSize: "10px", marginRight: "2px", color: "red"}}>Approved pending</span>
-                                    <span>John Deer</span><br/>
-                                    <span style={{fontSize: "10px"}}>No Comments</span>
+                                    <span style={{fontSize: "12px", marginRight: "2px", color: "red"}}>Approved pending</span>
+                                    <span>Wes Warren</span><br/>
+                                    <span style={{fontSize: "12px"}}>No Comments</span>
                                   </div>
                                 </div>
                                 <div className="col-md-3">
-                                  <span className="glyphicon glyphicon-ok-sign" style={{fontSize: "30px", color: "green"}} aria-hidden="true"></span>
+                                  <span className="" style={{fontSize: "30px", color: "green"}} aria-hidden="true"></span>
                                 </div>
                               </div>
                             </div>
@@ -199,7 +199,7 @@ class AdminApproval extends React.Component {
                           <div className="row" style={{backgroundColor: "#f5f5f5"}}>
                             <textarea style={{resize: "none", margin: "20px", width: "90%"}} rows="5" > </textarea>
                             <div className="pull-right" style={{marginRight: "20px"}}>
-                              <a>View Details</a>
+                              
                               <div style={{marginBottom: "10px"}}>
                                 <input className="btn" style={{marginRight: "20px"}} type="button" value="Reject" />
                                 <input className="btn btn-primary" type="button" value="Approve" />

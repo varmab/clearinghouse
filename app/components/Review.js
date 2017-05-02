@@ -38,7 +38,7 @@ class Review extends React.Component {
 
         <div id="main" className="page-content">
 
-          <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
+          <div className="mypage-header" style={{backgroundColor: "#002C5F", height: "215px"}}>
           <Header />
             <div className="container mypage-content">
               <div className="row">

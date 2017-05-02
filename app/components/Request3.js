@@ -38,7 +38,7 @@ class Request3 extends React.Component {
 
         <div id="main" className="page-content">
 
-          <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
+          <div className="mypage-header" style={{backgroundColor: "#002C5F", height: "215px"}}>
           <Header />
             <div className="container mypage-content">
               <div className="row">
@@ -129,37 +129,6 @@ class Request3 extends React.Component {
                                   </div>
                                   </div>
 
-                                  <div className="row" style={{marginTop: "20px"}}>
-                                  <div className="col-md-6">
-                                    <div className="form-group">
-                                    <select className="form-control nullShadow" id="sel1" style={{width:'100%',height: '45px'}}>
-                                    <option></option>
-                                    <option>$0 - $20,000</option>
-                                    <option>$20,000 - $40,000</option>
-                                    <option>$40,000 - $60,000</option>
-                                    </select>
-                                  </div>
-                                  </div>
-                                  <div className="col-md-6">
-                                  <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="Business area to be changed"/>
-                                  </div>
-                                  </div>
-                                  <div className="row" style={{marginTop: "20px"}}>
-                                  <div className="col-md-6">
-                                    <input type="date" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="date"/>
-                                  </div>
-                                  <div className="col-md-6">
-                                  <div className="form-group nullShadow">
-                                    <select className="form-control nullShadow" id="sel1" style={{width:'100%',height: '45px'}}>
-                                    <option></option>
-                                    <option>0-5 years</option>
-                                    <option>5-10 years</option>
-                                    <option>10-15 years</option>
-                                    </select>
-                                  </div>
-                                  </div>
-                                  </div>
-
                                   <div style={{marginTop: "20px"}}>
                                   what would the implications if you could not own/use this specific name and/or URL
                                   For example, is the name owned by another company in a different industry?
@@ -184,6 +153,7 @@ class Request3 extends React.Component {
 
                                    <textarea style={{resize: "none", marginTop: "20px"}} className="form-control nullShadow" rows="5" id="comment"></textarea>
                                   </div>
+                                  
 
                 <div className="row">
                 <div className="col-md-4 row text-center" style={{marginTop: '40px',marginBottom: '40px'}}>

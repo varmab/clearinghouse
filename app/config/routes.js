@@ -13,6 +13,7 @@ import Register from '../components/Register';
 import Home1 from '../components/Home1';
 import Review from '../components/Review';
 import LoginPage from '../components/LoginPage';
+import LoginPage1 from '../components/LoginPage1';
 import Submit from '../components/Submit';
 import Admin2 from '../components/Admin2';
 import AdminApproval from '../components/AdminApproval';
@@ -20,8 +21,9 @@ import AdminApproval from '../components/AdminApproval';
 export default (
 
 	<Route name="app" path="/" component={Main}>
-		<IndexRoute component={LoginPage} />
+		<IndexRoute component={LoginPage1} />
 		<Route path="/loginPage" component={LoginPage} />
+		<Route path="/loginPage" component={LoginPage1} />
 		<Route path="/training" component={Home} />
 		<Route path="/directory" component={Directory} />
 		<Route path="/request" component={Request} />

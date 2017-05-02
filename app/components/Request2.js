@@ -45,7 +45,7 @@ class Request2 extends React.Component {
 
         <div id="main" className="page-content">
 
-          <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
+          <div className="mypage-header" style={{backgroundColor: "#002C5F", height: "215px"}}>
           <Header />
             <div className="container mypage-content">
               <div className="row">
@@ -166,7 +166,7 @@ class Request2 extends React.Component {
 
                 <div className="row">
                 <div className="col-md-6 row text-center" style={{marginTop: '40px',marginBottom: '40px'}}>
-                      <input type="button" onClick={this.redirectTo.bind(this, "request")} className="btn nextButton btn-default"  style={{height: '45px', width:'50%'}} value="Back" disabled/>
+                      <input type="button" onClick={this.redirectTo.bind(this, "home1")} className="btn nextButton btn-default"  style={{height: '45px', width:'50%'}} value="Back" disabled/>
                 </div>
                 <div className="col-md-6 row text-center" style={{marginTop: '40px',marginBottom: '40px'}}>
                       <input type="button" onClick={this.redirectTo.bind(this, "request3")} className="btn nextButton btn-info"  style={{height: '45px', width:'50%'}} value="Next" />

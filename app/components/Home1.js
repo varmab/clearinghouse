@@ -33,7 +33,7 @@ class Home1 extends React.Component {
 
         <div id="main" className="page-content">
 
-          <div className="mypage-header" style={{backgroundColor: "#092f5c", height: "215px"}}>
+          <div className="mypage-header" style={{backgroundColor: "#002C5F", height: "215px"}}>
 
           <Header />
 
@@ -47,7 +47,7 @@ class Home1 extends React.Component {
                 <div className="col-xs-8 col-md-9">
                   <div className="text-field">
                     <span>Good Afternoon</span><br />
-                    <span><span>Wes Warren</span><span>CMO,Corporate Communication</span></span><br />
+                    <span><span>Wes Warren </span><span>CMO,Corporate Communication</span></span><br />
                     <span>You have 3 new messages</span>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ class Home1 extends React.Component {
                     <div className="pull-left"><span>MY REQUEST : </span><span>(10) </span></div>
                   </div>
                   <div className="col-xs-6">
-                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "request")} className="btn btn-info"><i className="fa fa-plus" /> Start New Request</button></div>
+                    <div className="pull-right"><button onClick={this.redirectTo.bind(this, "request2")} className="btn btn-info"><i className="fa fa-plus" /> Start New Request</button></div>
                   </div>
                 </div>
               </div>

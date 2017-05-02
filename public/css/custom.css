@@ -144,7 +144,7 @@ button {
 }
 
 .progress {
-    height: 12px;
+    height: 6px;
     margin-top: 12px;
     margin-bottom: 0px;
 }
@@ -211,6 +211,7 @@ button {
 .headerTabs {
   height: 30px;
   color: white;
+  cursor: pointer;
 }
 
 .headerTabActive {
@@ -274,4 +275,12 @@ button {
   border: 1px solid #ddd;
   background-color: #ccc;
   color: white;
+}
+
+.adminTabContents {
+  display: none;
+}
+
+.activeAdminTabContent {
+  display: block !important;
 }
