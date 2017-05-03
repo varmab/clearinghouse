@@ -77,10 +77,10 @@ class LoginPage1 extends React.Component {
               <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
                   <div className="navbar-header">
-                    <a className="navbar-brand headerContentPadding" href="#">Guardian</a>
+                    <a className="navbar-brand headerContentPadding" href="#">Guardian Advertising and Branding Clearinghouse</a>
                   </div>
                   <ul className="nav navbar-nav">
-                    <li><a className="headerContentPadding" href="#">CLEARINGHOUSE</a></li>
+                    <li><a className="headerContentPadding" href="#">"Guardian ABC Clearinghouse"</a></li>
                   </ul>
                   <ul className="nav navbar-nav navbar-right">
                     <li><a className="headerContentPadding" data-toggle="modal" data-target="#myModal" style={{cursor: 'pointer'}}>Login</a></li>
@@ -119,8 +119,10 @@ class LoginPage1 extends React.Component {
 <div className="container-fluid">
             <div className="row" style={{backgroundColor: "white", height: "215px"}}>
                 <center>
-                <p className="homeTitle" style={{marginTop: "10px"}}>The Process</p>
-                <p>It is a long established fact that a reader will be distracted</p>
+                <p className="homeTitle" style={{marginTop: "10px"}}>Guardian’s Branding Clearinghouse <img src="./images/logo.png" /></p>
+
+                <p>The Branding Clearinghouse is a place for all of Guardian employees to submit branding and marketing ideas, or requests to use Guardian’s name or logo, through one portal that streamlines review, oversight and approval.</p>
+                <p>The Guardian ABC Clearinghouse is for all lines of business.</p>
 
                 <div className="row">
                 <div className="col-md-2">
@@ -157,13 +159,15 @@ class LoginPage1 extends React.Component {
         <div className="row">
             <div className="col-md-6" style={{backgroundColor: "#C1A236", height: "250px", color:"white"}}>
 
-                <center><p className="homeTitle" style={{marginTop: "20px"}}>The Guidelines</p></center>
+                <center><p className="homeTitle" style={{marginTop: "20px"}}>Guidelines</p></center>
                 <div className="row">
                 <div className="col-md-3">
                 </div>
                 <div className="col-md-9 pull-left">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
+                <p>Please review The Library for a complete and updated list of</p>
+				<p>1) Names and/or Trademarks in use</p>
+                <p>2) Guardian URLs</p>
+                <p>3) 3rd Party Users of the Guardian Name and Logo.</p>
 
                 </div>
 
@@ -172,24 +176,13 @@ class LoginPage1 extends React.Component {
 
             </div>
             <div className="col-md-6" style={{backgroundColor: "#002550", height: "250px",color:"white"}}>
-                <center><p className="homeTitle" style={{marginTop: "20px"}}>Do's and Dont's</p></center>
+                <center><p className="homeTitle" style={{marginTop: "20px"}}>The Process</p></center>
                 <div className="row">
                 <div className="col-md-1">
                 </div>
                 <div className="col-md-9 pull-left">
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
-                <p style={{marginRight: "50px"}}>
-									<span className="glyphicon glyphicon-ok-circle" aria-hidden="true" style={{marginRight: "10px"}}></span>
-									It is a long established fact that a reader will be distracted
-								</p>
-                <p>
-									<span className="glyphicon glyphicon-remove-circle" aria-hidden="true" style={{marginRight: "10px"}}></span>
-									By the readable content of a page when looking at its layout.
-								</p>
-                <p>
-									<span className="glyphicon glyphicon-ok-circle" aria-hidden="true" style={{marginRight: "10px"}}></span>
-									By the readable content of a page when looking at its layout.
-								</p>
+								<p>To avoid naming and branding submissions that may repeat or overlap, please follow the below instructions to obtain proper Brand, Legal, IT and Compliance Approval.  If you are seeking permission for 3rd Party Use of Guardian’s name or logo, please proceed by clicking Start Request</p>
+
                 </div>
                 <div className="col-md-2">
                 </div>
@@ -213,8 +206,8 @@ class LoginPage1 extends React.Component {
                                 <span className="input-group-addon homeCheckDiv" id="basic-addon1">
                                     <span className="glyphicon glyphicon-ok homeCheck" aria-hidden="true"></span>
                                 </span>
-                                <div type="text" className="form-control homeCheckText" placeholder="Username" aria-describedby="basic-addon1">
-                                    <div className="homeCheckInnerText">I have completed task #1</div>
+                                <div type="text" className="form-control homeCheckText" aria-describedby="basic-addon1">
+                                    <div className="homeCheckInnerText">I have conducted an independent Internet search for the name, brand idea or logo that I want to use.</div>
                                 </div>
                             </div>
                         </div>
@@ -228,8 +221,8 @@ class LoginPage1 extends React.Component {
                                 <span className="input-group-addon homeCheckDiv" id="basic-addon1">
                                     <span className="glyphicon glyphicon-ok homeCheck" aria-hidden="true"></span>
                                 </span>
-                                <div type="text" className="form-control homeCheckText" placeholder="Username" aria-describedby="basic-addon1">
-                                    <div className="homeCheckInnerText">I have completed task #2</div>
+                                <div type="text" className="form-control homeCheckText" aria-describedby="basic-addon1">
+                                    <div className="homeCheckInnerText">I have proper permissions from my Manager or Team Leader for this Idea.</div>
                                 </div>
                             </div>
                         </div>
@@ -243,8 +236,8 @@ class LoginPage1 extends React.Component {
                                 <span className="input-group-addon homeCheckDiv" id="basic-addon1">
                                     <span className="glyphicon glyphicon-ok homeCheck" aria-hidden="true"></span>
                                 </span>
-                                <div type="text" className="form-control homeCheckText" placeholder="Username" aria-describedby="basic-addon1">
-                                    <div className="homeCheckInnerText">I have completed task #3</div>
+                                <div type="text" className="form-control homeCheckText" aria-describedby="basic-addon1">
+                                    <div className="homeCheckInnerText">Proper Budget Approval has been granted for my Idea.</div>
                                 </div>
                             </div>
                         </div>

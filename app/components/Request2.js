@@ -9,11 +9,12 @@ class Request2 extends React.Component {
   constructor(props) {
         super(props)
         this.state = {
-              requestValue: "A New URLS(s)",
+              requestValue: "A New URL (one submission per URL)",
               businessUnit: "Select Business Unit",
               manager: "Select Manager",
               budget: "Select Budget",
-              lifeSpan: "Select Life Span"
+              lifeSpan: "Select Life Span",
+              thirdParty: false
         };
     }
 
@@ -36,6 +37,16 @@ class Request2 extends React.Component {
     change[type] = value;
 
     this.setState(change)
+
+    if(type == "requestValue") {
+      if(value == "3rd PARTY USE of Guardian Name & Logo") {
+        this.setState({thirdParty: true});
+      }
+      else {
+        this.setState({thirdParty: false});
+      }
+    }
+
   }
 
 
@@ -59,16 +70,15 @@ class Request2 extends React.Component {
                   <div className="col-md-8">
 
                    <div className="dropdown nullShadow form-control">
-                        <button className="btn btn-default dropdown-toggle" type="button" id="menu1" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown">{this.state.requestValue}
+                        <button className="btn btn-default dropdown-toggle" type="button" id="menu1" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown" >{this.state.requestValue}
                           <span style={{float:'right'}}><i className="fa fa-angle-down" aria-hidden="true" /></span></button>
-                          <span style={{ fontSize: "12px", color: "#ccc"}}>A new Branding Name, Both a New URL(s) and Branding Name, 3rd party use of Guardian Name & logo</span>
+                          <span style={{ fontSize: "12px", color: "#ccc"}}>A new Branding Name, 3rd PARTY USE of Guardian Name & logo</span>
                         <ul className="dropdown-menu requestDropdown" role="menu" aria-labelledby="menu1" style={{width: '100%',margin: '0px',letterSpacing: '0px'}}>
-                          <li onClick={this.handleChange.bind(this, "requestValue", "A New URL(s)")}>A New URL(s)</li>
+                          <li onClick={this.handleChange.bind(this, "requestValue", "A New URL (one submission per URL)")}>A New URL (one submission per URL)</li>
                           <li onClick={this.handleChange.bind(this, "requestValue", "A New Branding Name")}>A New Branding Name</li>
-                          <li onClick={this.handleChange.bind(this, "requestValue", "Both a New URL(s) and Branding Name")}>Both a New URL(s) and Branding Name</li>
-                          <li onClick={this.handleChange.bind(this, "requestValue", "3rd party use of Guardian Name & Logo")}>3rd party use of Guardian Name & Logo</li>
+                          <li onClick={this.handleChange.bind(this, "requestValue", "3rd PARTY USE of Guardian Name & Logo")}>3rd PARTY USE of Guardian Name & Logo</li>
                         </ul>
-                     </div>
+                    </div>
 
                   </div>
                   <div className="col-md-1"></div>
@@ -80,50 +90,67 @@ class Request2 extends React.Component {
                   <div className="row" style={{marginTop: '50px',marginBottom: '50px'}}>
                       <div className="col-md-2"></div>
                       <div className="col-md-8">
+
+                          {
+                            (this.state.thirdParty)?
+                            (
+                              <div className="row">
+                                <div style={{color: "red", marginBottom: "20px"}}>For 3rd Party Use Requests, please only complete Numbers x, x, x, x</div>
+                              </div>
+                            ):(null)
+                          }
+
                                   <div className="row">
                                   <div className="col-md-6">
-                                  <span style={{ fontSize: "12px", color: "#ccc"}}>Your Name</span>
-                                    <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr"/>
+                                  <span style={{ fontSize: "12px", color: "#ccc"}}>1) Your Name</span>
+                                    <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="name" placeholder="Type your Name"/>
                                   </div>
                                   <div className="col-md-6">
-                            <span style={{ fontSize: "12px", color: "#ccc"}}>Business Unit</span>
+                                  <span style={{ fontSize: "12px", color: "#ccc"}}>2) Your Email</span>
+                                    <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="email" placeholder="Type your email"/>
+                                  </div>
+                                  </div>
+                                  <br/>
+
+
+                                  <div className="row">
+                                  <div className="col-md-6">
+                      <span style={{ fontSize: "12px", color: "#ccc"}}>3) Business Unit</span>
                    <div className="dropdown nullShadow form-control">
+
                         <button className="btn btn-default dropdown-toggle" type="button" id="menu2" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown">{this.state.businessUnit}
                           <span style={{float:'right'}}><i className="fa fa-angle-down" aria-hidden="true" /></span></button>
 
                         <ul className="dropdown-menu requestDropdown" role="menu" aria-labelledby="menu2" style={{width: '100%',margin: '0px',letterSpacing: '0px'}}>
-                          <li onClick={this.handleChange.bind(this, "businessUnit", "Marketing")}>Marketing</li>
-                          <li onClick={this.handleChange.bind(this, "businessUnit", "accounting")}>accounting</li>
-                          <li onClick={this.handleChange.bind(this, "businessUnit", "production")}>production</li>
+                          <li onClick={this.handleChange.bind(this, "businessUnit", "Group")}>Group</li>
+                          <li onClick={this.handleChange.bind(this, "businessUnit", "Individual Markets")}>Individual Markets</li>
+                          <li onClick={this.handleChange.bind(this, "businessUnit", "Dental")}>Dental</li>
+                          <li onClick={this.handleChange.bind(this, "businessUnit", "Vision")}>Vision</li>
+                          <li onClick={this.handleChange.bind(this, "businessUnit", "Park Avenue Securities")}>Park Avenue Securities</li>
                         </ul>
                      </div>
 
+                                  </div>
+
+                                  <div className="col-md-6">
+                                    <span style={{ fontSize: "12px", color: "#ccc"}}>Business Unit</span>
+                                    <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="Type Your Business Unit"/>
+                                  </div>
+                                  </div>
+                                  <br/>
+
+                                  <div className="row">
+                                  <div className="col-md-6">
+                                  <span style={{ fontSize: "12px", color: "#ccc"}}>4) Your Manager</span>
+                                    <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="Type Your Manager"/>
+                                  </div>
+                                  <div className="col-md-6">
                                   </div>
                                   </div>
                                   <br/>
                                   <div className="row">
                                   <div className="col-md-6">
-                      <span style={{ fontSize: "12px", color: "#ccc"}}>Your Manager</span>
-                   <div className="dropdown nullShadow form-control">
-
-                        <button className="btn btn-default dropdown-toggle" type="button" id="menu2" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown">{this.state.manager}
-                          <span style={{float:'right'}}><i className="fa fa-angle-down" aria-hidden="true" /></span></button>
-
-                        <ul className="dropdown-menu requestDropdown" role="menu" aria-labelledby="menu2" style={{width: '100%',margin: '0px',letterSpacing: '0px'}}>
-                          <li onClick={this.handleChange.bind(this, "manager", "Carl Johnson")}>Carl Johnson</li>
-                          <li onClick={this.handleChange.bind(this, "manager", "Mark Webbe")}>Mark Webber</li>
-                          <li onClick={this.handleChange.bind(this, "manager", "John Doe")}>John Doe</li>
-                        </ul>
-                     </div>
-
-                                  </div>
-                                  <div className="col-md-6">
-                                  </div>
-                                  </div>
-                                  <br/>
-                                  <div className="row">
-                                  <div className="col-md-6">
-                      <span style={{ fontSize: "12px", color: "#ccc"}}>Budget</span>
+                      <span style={{ fontSize: "12px", color: "#ccc"}}>5) Budget</span>
                    <div className="dropdown nullShadow form-control">
 
                         <button className="btn btn-default dropdown-toggle" type="button" id="menu2" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown">{this.state.budget}
@@ -139,18 +166,18 @@ class Request2 extends React.Component {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <span style={{ fontSize: "12px", color: "#ccc"}}>Business are to be changed</span>
+                                    <span style={{ fontSize: "12px", color: "#ccc"}}>6) Where is the home for this content?</span>
                                     <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr"/>
                                   </div>
                                   </div>
                                   <br/>
                                   <div className="row">
                                   <div className="col-md-6">
-                                  <span style={{ fontSize: "12px", color: "#ccc"}}>When does it need to be go live/in market by?</span>
+                                  <span style={{ fontSize: "12px", color: "#ccc"}}>7) When does it need to be go live/in market by?</span>
                                     <input type="date" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="date"/>
                                   </div>
                                   <div className="col-md-6">
-                    <span style={{ fontSize: "12px", color: "#ccc"}}>What is the life span of this new branding name/URL(s)?</span>
+                    <span style={{ fontSize: "12px", color: "#ccc"}}>8) What is the life span of this new branding name/URL(s)?</span>
                    <div className="dropdown nullShadow form-control">
                         <button className="btn btn-default dropdown-toggle" type="button" id="menu2" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown">{this.state.lifeSpan}
                           <span style={{float:'right'}}><i className="fa fa-angle-down" aria-hidden="true" /></span></button>
@@ -163,6 +190,25 @@ class Request2 extends React.Component {
 
                                   </div>
                                   </div>
+                                  <br/>
+
+              {
+                (this.state.thirdParty)?
+                (
+                  <div className="row">
+                    <div className="col-md-6">
+                    <span style={{ fontSize: "12px", color: "#ccc"}}>9) Name of 3rd Party Requester</span>
+                      <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="Name of 3rd Party Requester"/>
+                    </div>
+                    <div className="col-md-6">
+                    <span style={{ fontSize: "12px", color: "#ccc"}}>10) Type Relationship of 3rd Party Requester</span>
+                      <input type="text" style={{width:'100%',height: '45px'}} className="form-control nullShadow" id="usr" placeholder="Type Relationship of 3rd Party Requester"/>
+                    </div>
+                  </div>
+                ):(null)
+              }
+
+
 
                 <div className="row">
                 <div className="col-md-6 row text-center" style={{marginTop: '40px',marginBottom: '40px'}}>

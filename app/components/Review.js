@@ -9,7 +9,7 @@ class Review extends React.Component {
   constructor(props) {
         super(props)
         this.state = {
-              requestValue:"A New URLS(s)"
+              requestValue:"A New URL (one submission per URL)"
         };
     }
 
@@ -54,12 +54,12 @@ class Review extends React.Component {
                    <div className="dropdown nullShadow form-control">
                         <button className="btn btn-default dropdown-toggle" type="button" id="menu1" style={{width:'100%',backgroundColor: 'white',textAlign: 'left',height: '40px',outline: 0, marginTop: "-5px", border: "0px", color: "#308bc0", paddingLeft: "0px"}} data-toggle="dropdown">{this.state.requestValue}
                           <span style={{float:'right'}}><i className="fa fa-angle-down" aria-hidden="true" /></span></button>
-                          <span style={{ fontSize: "12px", color: "#ccc"}}>A new Branding Name, Both a New URL(s) and Branding Name, 3rd party use of Guardian Name & logo</span>
+                          <span style={{ fontSize: "12px", color: "#ccc"}}>A new Branding Name, 3rd PARTY USE of Guardian Name & logo</span>
                         <ul className="dropdown-menu requestDropdown" role="menu" aria-labelledby="menu1" style={{width: '100%',margin: '0px',letterSpacing: '0px'}}>
-                          <li onClick={this.requestValue.bind(this,"A New URL(s)")}>A New URL(s)</li>
+                          <li onClick={this.requestValue.bind(this,"A New URL (one submission per URL)")}>A New URL (one submission per URL)</li>
                           <li onClick={this.requestValue.bind(this,"A New Branding Name")}>A New Branding Name</li>
-                          <li onClick={this.requestValue.bind(this,"Both a New URL(s) and Branding Name")}>Both a New URL(s) and Branding Name</li>
-                          <li onClick={this.requestValue.bind(this,"3rd party use of Guardian Name & Logo")}>3rd party use of Guardian Name & Logo</li>
+                          
+                          <li onClick={this.requestValue.bind(this,"3rd PARTY USE of Guardian Name & Logo")}>3rd PARTY USE of Guardian Name & Logo</li>
                         </ul>
                      </div>
 
